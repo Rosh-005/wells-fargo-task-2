@@ -1,6 +1,9 @@
 package entity;
 
 import javax.persistence.*;
+import com.wellsfargo.counselor.*;
+import java.util.List;
+import java.util.Date;
 
 @Entity
 public class Portfolio {
@@ -23,7 +26,36 @@ public class Portfolio {
         this.creationDate = creationDate;
     }
 
-    // Getters and Setters
-    // Similar to the Advisor class
+    public Client getClient() {
+        return client;
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
+    }
+
+    public Date getCreationDate() {
+        return creationDate;
+    }
+
+    public void setCreationDate(Date creationDate) {
+        this.creationDate = creationDate;
+    }
+
+    public Long getPortfolioId() {
+        return portfolioId;
+    }
+
+    public void setPortfolioId(Long portfolioId) {
+        this.portfolioId = portfolioId;
+    }
+
+    public List<Security> getSecurities() {
+        return securities;
+    }
+
+    public void setSecurities(List<Security> securities) {
+        this.securities = securities;
+    }
 }
 

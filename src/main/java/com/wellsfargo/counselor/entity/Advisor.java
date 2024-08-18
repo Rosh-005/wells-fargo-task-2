@@ -4,6 +4,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import java.util.List;
+import com.wellsfargo.counselor.*;
+import com.wellsfargo.counselor.entity.Client;
 
 @Entity
 public class Advisor {

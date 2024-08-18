@@ -1,7 +1,9 @@
 package entity;
 
 import javax.persistence.*;
-
+import com.wellsfargo.counselor.*;
+import java.util.List;
+import java.util.Date;
 
 @Entity
 public class Security {
@@ -29,7 +31,60 @@ public class Security {
         this.portfolio = portfolio;
     }
 
-    // Getters and Setters
-    // Similar to the Advisor class
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Portfolio getPortfolio() {
+        return portfolio;
+    }
+
+    public void setPortfolio(Portfolio portfolio) {
+        this.portfolio = portfolio;
+    }
+
+    public Date getPurchaseDate() {
+        return purchaseDate;
+    }
+
+    public void setPurchaseDate(Date purchaseDate) {
+        this.purchaseDate = purchaseDate;
+    }
+
+    public Double getPurchasePrice() {
+        return purchasePrice;
+    }
+
+    public void setPurchasePrice(Double purchasePrice) {
+        this.purchasePrice = purchasePrice;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
+
+    public Long getSecurityId() {
+        return securityId;
+    }
+
+    public void setSecurityId(Long securityId) {
+        this.securityId = securityId;
+    }
 }
 
