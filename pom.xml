@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.wellsfargo</groupId>
-    <artifactId>counselor</artifactId>
+    <artifactId>c</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>wells-fargo-task-2</name>
     <description>wells-fargo-task-2</description>
@@ -30,7 +30,25 @@
             <artifactId>h2</artifactId>
             <scope>runtime</scope>
         </dependency>
-    </dependencies>
+
+            <!-- Other dependencies -->
+
+            <!-- JPA (Java Persistence API) -->
+            <dependency>
+                <groupId>javax.persistence</groupId>
+                <artifactId>javax.persistence-api</artifactId>
+                <version>2.2</version>
+            </dependency>
+
+            <!-- Hibernate ORM (Optional: Only if you're using Hibernate as your JPA provider) -->
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-core</artifactId>
+                <version>5.6.9.Final</version>
+            </dependency>
+        </dependencies>
+
+
 
     <build>
         <plugins>
